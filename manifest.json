@@ -1,0 +1,474 @@
+{
+  "arguments": [
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/paper/ledger-appendix-v1.pdf",
+        "code/paper/paper-v1.pdf"
+      ],
+      "pdf_filename": "ledger-appendix-v1.pdf",
+      "project": "ledger",
+      "published": "2026-08-25T08:25:46-04:00",
+      "sha256": "bd84a2b31b63f7aa57540b9d3a207ca6cbee6349449efa3743c09bb106050eb2",
+      "tags": [
+        "pdf"
+      ],
+      "title": "Ledger Appendix V1",
+      "uuid": "4e40362c-aad3-4cdf-bdaa-432647790ae8"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/paper/DECODING.md",
+        "code/paper/decode_carriers.py",
+        "code/paper/shard-00.png",
+        "code/paper/shard-01.png",
+        "code/paper/shard-02.png",
+        "code/paper/shard-03.png",
+        "code/paper/shard-04.png",
+        "code/paper/shard-05.png",
+        "code/paper/shard-06.png",
+        "code/paper/zkpop.pdf"
+      ],
+      "pdf_filename": "zkpop.pdf",
+      "project": "zkpop",
+      "published": "2026-08-25T17:28:27-04:00",
+      "sha256": "c71bc0567b25e99303a9289b26db0d8908e9d1b8a245cba500691491aec8177f",
+      "tags": [
+        "zkpop",
+        "zero-knowledge",
+        "pdf"
+      ],
+      "title": "Zkpop",
+      "uuid": "5e8b853a-1adc-404c-a762-f694d2c8a4cf"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/paper/lea-zk.pdf"
+      ],
+      "pdf_filename": "lea-zk.pdf",
+      "project": "zkpop",
+      "published": "2026-08-26T03:39:19-04:00",
+      "sha256": "61acb26808da876236eac7f1663bb401e388a4ad1c1093e6980062034fdc44e1",
+      "tags": [
+        "zero-knowledge",
+        "pdf"
+      ],
+      "title": "Lea Zk",
+      "uuid": "c3380adf-923a-4ef8-bb8b-1bf20d148fd0"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/paper/eliza-lean-memory.pdf"
+      ],
+      "pdf_filename": "eliza-lean-memory.pdf",
+      "project": "lean4",
+      "published": "2026-08-26T09:51:59-04:00",
+      "sha256": "be939d94d9ec7ea2fe80861ae1858d8028534e96506135f25acb0de7d5c30c34",
+      "tags": [
+        "lean4",
+        "pdf"
+      ],
+      "title": "Eliza Lean Memory",
+      "uuid": "01cf5ff3-cc71-4aef-8b74-1644d23da7de"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/python-ZKPoP-SelfApplication.pdf"
+      ],
+      "pdf_filename": "python-ZKPoP-SelfApplication.pdf",
+      "project": "zkpop",
+      "published": "2026-08-26T10:01:25-04:00",
+      "sha256": "2984560d441b59cf92668f905e52c9c9ee92d33b3ee1f9190480edb8722f4187",
+      "tags": [
+        "zkpop",
+        "zero-knowledge",
+        "pdf"
+      ],
+      "title": "Python Zkpop Selfapplication",
+      "uuid": "b29b2f01-3da4-4006-bff2-83d55f44b696"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/compcert-zkpop.pdf"
+      ],
+      "pdf_filename": "compcert-zkpop.pdf",
+      "project": "zkpop",
+      "published": "2026-08-26T10:05:25-04:00",
+      "sha256": "5a5dcbef3f76a081823cd4b61f483379ea886e9f6de8bec9bee8b5887090685c",
+      "tags": [
+        "zkpop",
+        "zero-knowledge",
+        "pdf"
+      ],
+      "title": "Compcert Zkpop",
+      "uuid": "e40780fd-0a5e-4a42-85db-e9a7588f8110"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/paper/frob-self-zk.pdf"
+      ],
+      "pdf_filename": "frob-self-zk.pdf",
+      "project": "zkpop",
+      "published": "2026-08-26T10:10:05-04:00",
+      "sha256": "62946d347ecccb485c85a4723a5ac0e84baa857c7f7a5c7350672f5e5312a753",
+      "tags": [
+        "zero-knowledge",
+        "pdf"
+      ],
+      "title": "Frob Self Zk",
+      "uuid": "74949b46-5475-419e-b2ee-95272da2d8ea"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/paper/openpaths.pdf"
+      ],
+      "pdf_filename": "openpaths.pdf",
+      "project": "openpaths",
+      "published": "2026-08-26T10:17:37-04:00",
+      "sha256": "e88b108d0e33ebc49556095abe6010a062ca9877fee15c70cc1195e82eda1788",
+      "tags": [
+        "pdf"
+      ],
+      "title": "Openpaths",
+      "uuid": "0282edaa-73ca-4964-b1fd-13de48959cfc"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/paper/nodejs-zkpop.pdf"
+      ],
+      "pdf_filename": "nodejs-zkpop.pdf",
+      "project": "zkpop",
+      "published": "2026-08-26T10:35:02-04:00",
+      "sha256": "313a08eddd1967a78553e7f876c28b3509f3244ae350e82322d798a16fae7c60",
+      "tags": [
+        "zkpop",
+        "zero-knowledge",
+        "pdf"
+      ],
+      "title": "Nodejs Zkpop",
+      "uuid": "059ba9f2-d990-4619-8c74-a8f97cc40e82"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/paper/leanmend-paper.pdf"
+      ],
+      "pdf_filename": "leanmend-paper.pdf",
+      "project": "lean4",
+      "published": "2026-08-26T10:38:46-04:00",
+      "sha256": "94f0dd3f8fcf6efcfebef41a5872470aab60a465e27e515766c0027e92ba1262",
+      "tags": [
+        "lean4",
+        "pdf"
+      ],
+      "title": "Leanmend Paper",
+      "uuid": "18cc3cb5-1942-4d3e-b81b-241d311fa0d2"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/zkpop-paper.pdf"
+      ],
+      "pdf_filename": "zkpop-paper.pdf",
+      "project": "zkpop",
+      "published": "2026-08-26T10:47:09-04:00",
+      "sha256": "9c2ff5694e337cb345842c27b639af870d368f2a1cfce490b7166ca58189aca7",
+      "tags": [
+        "zkpop",
+        "zero-knowledge",
+        "pdf"
+      ],
+      "title": "Zkpop Paper",
+      "uuid": "3caa76e8-d30e-4fb4-a983-73cd79f9e854"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/paper/proof-of-the-proof.pdf"
+      ],
+      "pdf_filename": "proof-of-the-proof.pdf",
+      "project": "general",
+      "published": "2026-08-26T10:56:28-04:00",
+      "sha256": "dab48e2302b3cee180037775da4105bbea3df41233d204668701e875c514337f",
+      "tags": [
+        "proof",
+        "pdf"
+      ],
+      "title": "Proof Of The Proof",
+      "uuid": "c6f9217b-ca94-4d5c-852c-d2f12c902d0d"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/paper/zkpop.pdf"
+      ],
+      "pdf_filename": "zkpop.pdf",
+      "project": "zkpop",
+      "published": "2026-08-26T11:02:14-04:00",
+      "sha256": "a6482e919f6b414a9d79c6a3ed746ff52df08d272293dd1769534af7a443b8a5",
+      "tags": [
+        "zkpop",
+        "zero-knowledge",
+        "pdf"
+      ],
+      "title": "Zkpop",
+      "uuid": "c3e3d1ec-f0d8-4fee-818f-b64f6d5161ea"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/papers/paper_piport_zkpop.pdf",
+        "code/papers/piagent_paper_stepzk_zkpop.pdf"
+      ],
+      "pdf_filename": "paper_piport_zkpop.pdf",
+      "project": "zkpop",
+      "published": "2026-08-26T11:34:04-04:00",
+      "sha256": "459ec0fa4fe4aab5aed0106f4ed0d06724888c09f77b6ee006ec46124bc532c8",
+      "tags": [
+        "zkpop",
+        "zero-knowledge",
+        "pdf"
+      ],
+      "title": "Paper Piport Zkpop",
+      "uuid": "0c05e4e5-1c87-41bd-9eb3-86eb7aaf7a5e"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/paper/self-zk.pdf",
+        "code/paper/withheld-proofs.pdf"
+      ],
+      "pdf_filename": "self-zk.pdf",
+      "project": "zkpop",
+      "published": "2026-08-26T11:45:32-04:00",
+      "sha256": "bb02916ddb3dbe6b43c5acc47492d2651f96b03a0b1463d9b8310e54d18e3377",
+      "tags": [
+        "zero-knowledge",
+        "pdf"
+      ],
+      "title": "Self Zk",
+      "uuid": "95d6eee6-ec00-4ea7-814d-36b308d3ac94"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/docs/mojo-zkpop-v1.pdf"
+      ],
+      "pdf_filename": "mojo-zkpop-v1.pdf",
+      "project": "zkpop",
+      "published": "2026-08-26T12:11:16-04:00",
+      "sha256": "eb75014b63a3b43fab3ce79e430f29599d4dfbb579aa3730125e6ec0a4de68f4",
+      "tags": [
+        "zkpop",
+        "zero-knowledge",
+        "pdf"
+      ],
+      "title": "Mojo Zkpop V1",
+      "uuid": "01611b1b-20e1-40ac-8da1-7ea508d9520c"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/paper/self-zk-provenance.pdf"
+      ],
+      "pdf_filename": "self-zk-provenance.pdf",
+      "project": "zkpop",
+      "published": "2026-08-26T12:16:00-04:00",
+      "sha256": "3a0c4f7423bb81af9a0faff4eb84549c70968aac72e764f1a1facc0002671c2c",
+      "tags": [
+        "zero-knowledge",
+        "pdf"
+      ],
+      "title": "Self Zk Provenance",
+      "uuid": "e6379ff2-df8e-456c-bbcb-241fb7c95ead"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/docs/aitycoon-zkpop-conformance.pdf"
+      ],
+      "pdf_filename": "aitycoon-zkpop-conformance.pdf",
+      "project": "zkpop",
+      "published": "2026-08-26T14:00:30-04:00",
+      "sha256": "1c7af135be84a045e7ff9c7159e2d4d67a19b1a6fd24f9cd73750ebf353040b4",
+      "tags": [
+        "zkpop",
+        "zero-knowledge",
+        "conformance",
+        "pdf"
+      ],
+      "title": "Aitycoon Zkpop Conformance",
+      "uuid": "9de417cd-c219-4a95-87df-28bce8e54282"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/agda-zkpop-v1.pdf"
+      ],
+      "pdf_filename": "agda-zkpop-v1.pdf",
+      "project": "zkpop",
+      "published": "2026-08-26T14:21:46-04:00",
+      "sha256": "dc707603610d93c27f339f920b69b797a986dd07f8bba2db1999a9562bbc013e",
+      "tags": [
+        "zkpop",
+        "zero-knowledge",
+        "pdf"
+      ],
+      "title": "Agda Zkpop V1",
+      "uuid": "0bb95abd-73db-4cfd-87c3-8d9a887fa6e2"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/allemanic-zk-pop-v1.pdf"
+      ],
+      "pdf_filename": "allemanic-zk-pop-v1.pdf",
+      "project": "zkpop",
+      "published": "2026-08-26T15:22:17-04:00",
+      "sha256": "db550d3a5a5773de66d7b44a2a6be2ad6f8ef04d3f189d42288d10438fcc4985",
+      "tags": [
+        "zkpop",
+        "zero-knowledge",
+        "pdf"
+      ],
+      "title": "Allemanic Zk Pop V1",
+      "uuid": "bd5015af-2624-42c6-83c4-b171a31159c5"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/paper/noether-meta-meme-zkpop.pdf",
+        "code/paper/zkpop-v2.pdf"
+      ],
+      "pdf_filename": "noether-meta-meme-zkpop.pdf",
+      "project": "zkpop",
+      "published": "2026-08-26T15:29:24-04:00",
+      "sha256": "730b69a10114f6ec3115c82f57230603ae012b612eb07a99c04beea17e71190d",
+      "tags": [
+        "zkpop",
+        "zero-knowledge",
+        "pdf"
+      ],
+      "title": "Noether Meta Meme Zkpop",
+      "uuid": "e65146c2-d9c3-4bd9-a0b8-ce857269773d"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/zk-pop-2608.13759-v1.pdf"
+      ],
+      "pdf_filename": "zk-pop-2608.13759-v1.pdf",
+      "project": "zkpop",
+      "published": "2026-08-26T15:45:26-04:00",
+      "sha256": "201affe7d9cf86ccd3ea2b4840442c1c3e7a117817dbf66a5fca012616a18da4",
+      "tags": [
+        "zkpop",
+        "zero-knowledge",
+        "pdf"
+      ],
+      "title": "Zk Pop 2608.13759 V1",
+      "uuid": "63c53cf9-0c46-44f3-a1f4-3f5eb5028979"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/zk-pop-2608.13335v1-v1.pdf"
+      ],
+      "pdf_filename": "zk-pop-2608.13335v1-v1.pdf",
+      "project": "zkpop",
+      "published": "2026-08-26T15:52:03-04:00",
+      "sha256": "1b20092229b5c07dd22cbf0fdac53cc29617ae9f9af5760eccd91bc0923bd8f3",
+      "tags": [
+        "zkpop",
+        "zero-knowledge",
+        "pdf"
+      ],
+      "title": "Zk Pop 2608.13335V1 V1",
+      "uuid": "6f03246f-4a25-459d-9708-84d4c7717185"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/zk-pop-octra-lite-node-v1.pdf"
+      ],
+      "pdf_filename": "zk-pop-octra-lite-node-v1.pdf",
+      "project": "zkpop",
+      "published": "2026-08-26T16:27:04-04:00",
+      "sha256": "ecee1633ba5b9dbf420594a810e6de82d3cf08463456d4950a03edcd8a7de144",
+      "tags": [
+        "zkpop",
+        "zero-knowledge",
+        "pdf"
+      ],
+      "title": "Zk Pop Octra Lite Node V1",
+      "uuid": "d46acc4d-8232-479c-a023-86f6756f07ec"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/mog-zk-pop-v1.pdf"
+      ],
+      "pdf_filename": "mog-zk-pop-v1.pdf",
+      "project": "zkpop",
+      "published": "2026-08-26T16:50:44-04:00",
+      "sha256": "d7e7267141c940b2c39e50afb7ad474e5f0a1561fb35805fa79c48d435d1639e",
+      "tags": [
+        "zkpop",
+        "zero-knowledge",
+        "pdf"
+      ],
+      "title": "Mog Zk Pop V1",
+      "uuid": "c44a34ce-c0e7-490c-bfc9-06e625d5525a"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/paper/Readmd.md",
+        "code/paper/monster-work-v2-zkpop.pdf"
+      ],
+      "pdf_filename": "monster-work-v2-zkpop.pdf",
+      "project": "zkpop",
+      "published": "2026-08-26T17:48:10-04:00",
+      "sha256": "710ae94ab21680035080ebc8bfdc23a0a844e6b12f2f55f3960650792e35b761",
+      "tags": [
+        "zkpop",
+        "zero-knowledge",
+        "monster",
+        "pdf"
+      ],
+      "title": "Monster Work V2 Zkpop",
+      "uuid": "2e4c2e2e-17b3-4890-a95b-cbc0c9fee5df"
+    },
+    {
+      "author": "mike dupont",
+      "files": [
+        "code/paper/Readme.md",
+        "code/paper/zk-pop-solana-lean4-v1.pdf"
+      ],
+      "pdf_filename": "zk-pop-solana-lean4-v1.pdf",
+      "project": "zkpop",
+      "published": "2026-08-26T17:53:43-04:00",
+      "sha256": "4bcd7f137ff03f7dcba388295c86759c6c49c87673c9c467db0c387c009c470a",
+      "tags": [
+        "zkpop",
+        "zero-knowledge",
+        "lean4",
+        "solana",
+        "pdf"
+      ],
+      "title": "Zk Pop Solana Lean4 V1",
+      "uuid": "3e0aacb4-f6f8-4bdb-99ac-04563c6dcfa9"
+    }
+  ],
+  "generated": "2026-08-26T22:17:39.844362+00:00",
+  "total": 27,
+  "version": 1
+}
