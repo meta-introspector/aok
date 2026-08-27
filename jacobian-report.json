@@ -1,0 +1,91 @@
+{
+  "distances": {
+    "euclidean": {
+      "general \u2194 lean4": 1.557577,
+      "general \u2194 ledger": 1.700919,
+      "general \u2194 openpaths": 1.481088,
+      "general \u2194 zkpop": 1.551651,
+      "lean4 \u2194 ledger": 1.499927,
+      "lean4 \u2194 openpaths": 1.387004,
+      "lean4 \u2194 zkpop": 1.461017,
+      "ledger \u2194 openpaths": 1.475962,
+      "ledger \u2194 zkpop": 1.675554,
+      "openpaths \u2194 zkpop": 1.494558
+    },
+    "jacobian": {
+      "general \u2194 lean4": 1.489535,
+      "general \u2194 ledger": 0.0,
+      "general \u2194 openpaths": 0.0,
+      "general \u2194 zkpop": 1.627471,
+      "lean4 \u2194 ledger": 1.489535,
+      "lean4 \u2194 openpaths": 1.489535,
+      "lean4 \u2194 zkpop": 0.633345,
+      "ledger \u2194 openpaths": 0.0,
+      "ledger \u2194 zkpop": 1.627471,
+      "openpaths \u2194 zkpop": 1.627471
+    },
+    "sha256_cosine": {
+      "general \u2194 lean4": 0.873042,
+      "general \u2194 ledger": 0.944359,
+      "general \u2194 openpaths": 0.789474,
+      "general \u2194 zkpop": 0.697034,
+      "lean4 \u2194 ledger": 0.904129,
+      "lean4 \u2194 openpaths": 0.836768,
+      "lean4 \u2194 zkpop": 0.605196,
+      "ledger \u2194 openpaths": 0.972179,
+      "ledger \u2194 zkpop": 0.687676,
+      "openpaths \u2194 zkpop": 0.708272
+    },
+    "tag_divergence": {
+      "general \u2194 lean4": 10.819778,
+      "general \u2194 ledger": 5.583176,
+      "general \u2194 openpaths": 5.583176,
+      "general \u2194 zkpop": 12.400676,
+      "lean4 \u2194 ledger": 5.583176,
+      "lean4 \u2194 openpaths": 5.583176,
+      "lean4 \u2194 zkpop": 7.700978,
+      "ledger \u2194 openpaths": 0.0,
+      "ledger \u2194 zkpop": 7.323202,
+      "openpaths \u2194 zkpop": 7.323202
+    }
+  },
+  "nearest_neighbors": {
+    "general": {
+      "distance": 0.0,
+      "farthest": "zkpop",
+      "max_distance": 1.627471,
+      "nearest": "ledger"
+    },
+    "lean4": {
+      "distance": 0.633345,
+      "farthest": "openpaths",
+      "max_distance": 1.489535,
+      "nearest": "zkpop"
+    },
+    "ledger": {
+      "distance": 0.0,
+      "farthest": "zkpop",
+      "max_distance": 1.627471,
+      "nearest": "general"
+    },
+    "openpaths": {
+      "distance": 0.0,
+      "farthest": "zkpop",
+      "max_distance": 1.627471,
+      "nearest": "general"
+    },
+    "zkpop": {
+      "distance": 0.633345,
+      "farthest": "openpaths",
+      "max_distance": 1.627471,
+      "nearest": "lean4"
+    }
+  },
+  "projects": [
+    "general",
+    "lean4",
+    "ledger",
+    "openpaths",
+    "zkpop"
+  ]
+}
