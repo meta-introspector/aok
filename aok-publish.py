@@ -8,6 +8,10 @@ Usage:
     python3 aok-publish.py <pdf-path> [--title TITLE] [--project PROJECT]
                                     [--author AUTHOR] [--tags tag1,tag2]
                                     [--source-url URL] [--extra-file PATH...]
+                                    [--private] [--no-push]
+
+With --private, the argument is published to the private aok repo
+(meta-introspector/aok-private) instead of the public one.
 
 Structure created:
     <uuid>/
@@ -36,7 +40,13 @@ import uuid as uuid_module
 from pathlib import Path
 
 # Repo root is the directory containing this script
-REPO_ROOT = Path(__file__).resolve().parent
+SCRIPT_DIR = Path(__file__).resolve().parent
+
+# Private repo lives alongside the public one
+PRIVATE_REPO = SCRIPT_DIR.parent / "aok-private"
+
+# Default to public repo (this script's own directory)
+REPO_ROOT = SCRIPT_DIR
 
 
 def sha256_file(path: Path) -> str:
@@ -114,7 +124,19 @@ def publish(
     extra_files: list[Path],
     subdir: str,
     dry_run: bool,
+    private: bool,
+    no_push: bool,
 ) -> str:
+    # Select target repo
+    repo_root = PRIVATE_REPO if private else SCRIPT_DIR
+    if private and not repo_root.exists():
+        print(f"Error: Private repo not found at {repo_root}", file=sys.stderr)
+        print("Create it with: gh repo create meta-introspector/aok-private --private", file=sys.stderr)
+        raise SystemExit(1)
+
+    repo_label = "private" if private else "public"
+    print(f"Publishing to {repo_label} repo: {repo_root}")
+
     # Validate PDF exists
     if not pdf_path.exists():
         print(f"Error: PDF not found: {pdf_path}", file=sys.stderr)
@@ -122,7 +144,7 @@ def publish(
 
     # Generate UUID
     arg_uuid = str(uuid_module.uuid4())
-    arg_dir = REPO_ROOT / arg_uuid
+    arg_dir = repo_root / arg_uuid
     code_dir = arg_dir / "code"
     target_subdir = code_dir / subdir
     target_subdir.mkdir(parents=True, exist_ok=True)
@@ -162,6 +184,7 @@ def publish(
         "files": file_list,
         "pdf_filename": pdf_path.name,
         "subdir": subdir,
+        "private": private,
     }
 
     # Write metadata.json
@@ -175,7 +198,13 @@ def publish(
             f.write(generate_readme(meta))
 
     # Update manifest
-    manifest = load_manifest()
+    manifest_path = repo_root / "manifest.json"
+    if manifest_path.exists():
+        with open(manifest_path) as f:
+            manifest = json.load(f)
+    else:
+        manifest = {"version": 1, "arguments": []}
+
     manifest_entry = {
         "uuid": arg_uuid,
         "title": title,
@@ -185,30 +214,35 @@ def publish(
         "sha256": sha,
         "tags": tags,
         "files": file_list,
+        "private": private,
     }
     manifest["arguments"].append(manifest_entry)
     manifest["arguments"].sort(key=lambda x: x.get("published", ""))
 
     if not dry_run:
-        save_manifest(manifest)
+        with open(manifest_path, "w") as f:
+            json.dump(manifest, f, indent=2, sort_keys=True)
+            f.write("\n")
 
     # Git operations
     if not dry_run:
-        git_cmd("add", arg_uuid)
-        git_cmd("add", "manifest.json")
+        git_cmd("add", arg_uuid, cwd=repo_root)
+        git_cmd("add", "manifest.json", cwd=repo_root)
         commit_msg = f"Publish: {title} ({arg_uuid[:8]})"
-        git_cmd("commit", "-m", commit_msg)
+        git_cmd("commit", "-m", commit_msg, cwd=repo_root)
 
         # Push
-        try:
-            git_cmd("push", "origin", "main")
-            print(f"Pushed to origin/main")
-        except SystemExit:
-            print("Warning: push failed, committed locally", file=sys.stderr)
+        if not no_push:
+            try:
+                git_cmd("push", "origin", "main", cwd=repo_root)
+                print(f"Pushed to origin/main ({repo_label})")
+            except SystemExit:
+                print(f"Warning: push failed, committed locally", file=sys.stderr)
 
     print(f"Published: {title}")
     print(f"  UUID: {arg_uuid}")
-    print(f"  Path: {arg_dir.relative_to(REPO_ROOT)}")
+    print(f"  Repo: {repo_label}")
+    print(f"  Path: {arg_dir.relative_to(repo_root)}")
     print(f"  SHA-256: {sha}")
     if dry_run:
         print("  (dry run — no files written)")
@@ -239,6 +273,10 @@ def main(argv: list[str]) -> int:
                         help="Subdirectory under code/ (default: paper)")
     parser.add_argument("--dry-run", action="store_true",
                         help="Show what would happen without writing")
+    parser.add_argument("--private", action="store_true",
+                        help="Publish to the private aok repo instead of public")
+    parser.add_argument("--no-push", action="store_true",
+                        help="Commit locally without pushing to remote")
 
     args = parser.parse_args(argv[1:])
 
@@ -254,6 +292,8 @@ def main(argv: list[str]) -> int:
         extra_files=args.extra_files,
         subdir=args.subdir,
         dry_run=args.dry_run,
+        private=args.private,
+        no_push=args.no_push,
     )
     return 0
 
