@@ -6,7 +6,8 @@ public import RequestProject.FiniteField.SixfoldUnits
 
 /-!
 # The parameterized prime-sector specification (any modulus `Π` in place of `71`)
-
+Thanks to @jdredding 
+https://x.com/JDRedding/status/2109752181134106682?s=20
 The specification defines, for a user-selected modulus `Π`,
 `ε = frac((Π-1)/6)`, `Δ = 1 + ε`, `ρ = frac(Π·Δ)`, a tile `v = (a + bω) mod Π` in
 `ℤ[ω]/(Π)`, and a symmetry rule "six-fold symmetry may close iff `Π ≡ 0, ±1 (mod 36)`".
